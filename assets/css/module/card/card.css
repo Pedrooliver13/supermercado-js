@@ -1,0 +1,70 @@
+.cards {
+  max-width: 800px;
+  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+
+  gap: 20px;
+
+  /* padding: 0.5rem; */
+  margin: 1.5rem auto;
+  border-radius: 10px;
+}
+
+.card {
+  max-width: 200px;
+  width: 100%;
+  background-color: var(--color3);
+  border: 4px solid transparent;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  cursor: pointer;
+
+  line-height: 2;
+  padding: 20px;
+
+  transition: .3s ease;
+}
+
+.js .card.active {
+  transform: scale(1.1);
+  border: 4px solid var(--color4);
+}
+
+.card__image img {
+  max-width: 100%;
+  width: 100px;
+  height: 100px;
+  
+  display: block;
+  border-radius: 8px;
+  object-fit: cover;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.card__title {
+  font-weight: bold;
+  font-size: 1rem;
+  color: var(--color2);
+}
+
+.card__price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--color5);
+}
+
+@media(max-width: 960px) {
+  .cards {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+
+}

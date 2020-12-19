@@ -1,0 +1,8 @@
+.discount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  padding: 1rem;
+  line-height: 1.5;
+}
